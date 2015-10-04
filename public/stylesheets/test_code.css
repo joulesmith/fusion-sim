@@ -1,0 +1,361 @@
+
+body {
+    background-color: #000000;
+
+    font-weight: bold;
+    font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;
+    color: #ffffff;
+}
+
+
+a {
+    text-decoration: none;
+    color: #000000;
+
+}
+
+hr {
+    margin: 5px 0;
+}
+
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+  cursor: move;
+}
+
+
+ul[dnd-list], ul[dnd-list] > li {
+	position: relative;
+}
+
+ul[dnd-list] {
+    /*min-height: 42px;*/
+    margin: 0px;
+    padding-left: 0px;
+}
+
+.dndDragging {
+    opacity: 0.5;
+}
+
+/**
+ * The dndDraggingSource class will be applied to the source element of a drag
+ * operation. It makes sense to hide it to give the user the feeling that he's
+ * actually moving it. Note that the source element has also .dndDragging class.
+ */
+.dndDraggingSource {
+    display:none;
+}
+
+/**
+ * An element with .dndPlaceholder class will be added as child of the dnd-list
+ * while the user is dragging over it.
+ */
+.dndPlaceholder {
+    background-color: #ffffff;
+    height: 1.5em;
+    width: 1.5em;
+    position: relative;
+}
+
+
+form {
+    margin: 0;
+}
+
+input {
+    background-color: rgba(0,0,0,0);
+    border: none;
+    padding: 0;
+    min-width: 6em;
+}
+
+select {
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    padding: 0;
+}
+
+
+div.add {
+    padding: 0px 2px;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    text-align: center;
+    min-width: 2em;
+}
+
+button.add {
+    padding: 0px 2px;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    text-align: center;
+    min-width: 2em;
+}
+
+div.nevermind {
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+ul.list_array {
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.box {
+    padding: 2px 2px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    vertical-align: top;
+    position: relative;
+}
+
+.inline {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.block {
+    display: block;
+}
+
+div.function {
+    border-color: #f7bb80;
+    background-color: #1e1c1a;
+}
+
+.function .slot {
+    border-color: #6b635c;
+    background-color: #161513;
+}
+
+
+div.assign {
+    border-color: #4f5051;
+    background-color: #80878e;
+}
+
+div.assign > div.slot {
+    border-color: #4f5051;
+    background-color: #54595e;
+}
+
+span.variable {
+    cursor : pointer;
+    color: #ffffff;
+}
+
+div.variable {
+    padding: 0px 2px;
+}
+
+span.source {
+    color: #fff1a8;
+    cursor : pointer;
+}
+
+div.source {
+    padding: 0px 2px;
+}
+
+span.null {
+    color: #cccccc;
+    cursor : pointer;
+}
+
+div.null {
+    padding: 0px 2px;
+}
+
+span.boolean {
+    color: #34dc85;
+    cursor : pointer;
+}
+
+div.boolean {
+    padding: 0px 2px;
+}
+
+span.number {
+    color: #a0f7a6;
+    cursor : pointer;
+}
+
+div.number {
+    padding: 0px 2px;
+}
+
+
+span.string {
+    color: #a8d9ff;
+    cursor : pointer;
+}
+
+div.string {
+    padding: 0px 2px;
+}
+
+div.types {
+
+}
+
+
+.types td {
+    padding: 2px;
+}
+
+.types table, th, td {
+    border: 1px solid rgba(0,0,0,0.5);
+}
+
+div.property {
+    border-width: 0px;
+    display: block;
+}
+
+div.object {
+    border-color:#ffa0b3;
+    background-color: #504853;
+    min-width: 10em;
+}
+
+span.object {
+    color:#ffa0b3;
+}
+
+.object .slot {
+    border-color:#726777;
+    background-color: #322c35;
+}
+
+div.evaluate {
+    border-color: #c9ff8c;
+    background-color: #3f4f44;
+}
+
+.evaluate .slot {
+    border-color: #597060;
+    background-color: #27302a;
+}
+
+div.return {
+    border-color: #f7f071;
+    background-color: #515140;
+}
+
+.return .slot {
+    border-color: #686854;
+    background-color: #1e1e18;
+}
+
+div.array {
+    border-color: #e182ff;
+    background-color: #504853;
+    min-width: 10em;
+}
+
+
+.array .slot {
+    border-color: #726777;
+    background-color: #322c35;
+}
+
+div.reference {
+    border-color: #00ffff;
+    background-color: #447f7f;
+
+}
+
+.reference .slot {
+
+}
+
+div.if {
+    border-color: #71c7fc;
+    background-color: #004e7f;
+
+}
+
+div.conditional {
+    border-color: #a6eefc;
+    background-color: #004654;
+
+}
+
+div.while {
+    border-color: #71c7fc;
+    background-color: #004e7f;
+
+}
+
+div.for {
+    border-color: #71c7fc;
+    background-color: #004e7f;
+
+}
+
+div.for-in {
+    border-color: #71c7fc;
+    background-color: #004e7f;
+
+}
+
+div.module {
+    border-color: #f49c7f;
+    background-color: #494949;
+}
+
+span.module {
+    color: #f49c7f;
+}
+
+.module .slot {
+    border-color: #6b635c;
+    background-color: #161513;
+}
+
+span.dependency {
+    color: #ffbfbf;
+    cursor : pointer;
+}
+
+div.dependency {
+    border-color: #a0a0a0;
+    background-color: #212121;
+}
+
+div.directory {
+    border-color: #fcec99;
+    background-color: #59554c;
+}
+
+span.directory {
+    color: #fcec99;
+}
+
+div.file {
+
+    padding: 0px 2px;
+    border-color: #e5dabc;
+    background-color: #2d2b27;
+}
+
+span.file {
+    cursor : pointer;
+    color: #ffffff;
+}

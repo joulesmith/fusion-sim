@@ -1,0 +1,291 @@
+
+
+.symbol {
+    padding: 2px 2px;
+}
+
+.assign {
+    border-color: #4f5051;
+    background-color: #80878e;
+}
+
+.assign .slot {
+    border-color: #4f5051;
+    background-color: #54595e;
+}
+
+div.function {
+    border-color: #f7bb80;
+    background-color: #1e1c1a;
+}
+
+.function .slot {
+    border-color: #6b635c;
+    background-color: #161513;
+}
+
+
+.return {
+    border-color: #f7f071;
+    background-color: #515140;
+}
+
+.return .slot {
+    border-color: #686854;
+    background-color: #1e1e18;
+}
+
+.array {
+    border-color: #e182ff;
+    background-color: #504853;
+}
+
+
+.array .slot {
+    border-color: #726777;
+    background-color: #322c35;
+}
+
+.blank {
+    padding: 2px 2px;
+    border: 2px solid #dddddd;
+    border-radius: 5px;
+    background-color: #ffffff;
+    display: inline-block;
+}
+
+.if {
+    vertical-align: top;
+    padding: 4px 4px;
+    border: 2px solid #4ed0fc;
+    border-radius: 5px;
+    background-color: #353e44;
+    display: inline-block;
+}
+
+.property {
+    border-width: 0px;
+    display: block;
+}
+
+.evaluate {
+    border-color: #c9ff8c;
+    background-color: #3f4f44;
+    display:inline;
+}
+
+.evaluate div.number {
+    border-color: #597060;
+    background-color: #27302a;
+}
+
+.evaluate div.string {
+    border-color: #597060;
+    background-color: #27302a;
+}
+
+.evaluate div.boolean {
+    border-color: #597060;
+    background-color: #27302a;
+}
+
+.evaluate div.variable {
+    border-color: #597060;
+    background-color: #27302a;
+}
+
+.argument {
+    padding: 2px 2px;
+    border: 2px solid #f7bb80;
+    border-radius: 5px;
+    background-color: #54595e;
+}
+
+.symbol {
+    color: white;
+}
+
+span.null {
+    color: #cccccc;
+    cursor : pointer;
+}
+
+div.null {
+    padding: 0px 2px;
+}
+
+
+span.variable {
+    cursor : pointer;
+    color: #ffffff;
+}
+
+div.variable {
+    padding: 0px 2px;
+}
+
+span.number {
+    color: #a0f7a6;
+    cursor : pointer;
+}
+
+div.number {
+    padding: 0px 2px;
+}
+
+
+span.boolean {
+    color: #34dc85;
+    cursor : pointer;
+}
+
+div.boolean {
+    padding: 0px 2px;
+}
+
+span.string {
+    color: #a8d9ff;
+    cursor : pointer;
+}
+
+div.string {
+    padding: 0px 2px;
+}
+
+div.object {
+    border-color:#ffa0b3;
+    background-color: #504853;
+}
+
+.object div.number {
+    border-color:#726777;
+    background-color: #322c35;
+}
+
+.object div.string {
+    border-color:#726777;
+    background-color: #322c35;
+}
+
+.object div.boolean {
+    border-color:#726777;
+    background-color: #322c35;
+}
+
+.object div.variable {
+    border-color:#726777;
+    background-color: #322c35;
+}
+
+div.dialog_box {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    z-index: 2;
+    background-color: #000000;
+    curser: default;
+}
+
+div.add {
+    padding: 0px 2px;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+div.top_trash {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 2;
+
+    border-radius: 0  0 5px 5px;
+    border-width: 0;
+    background-color: #c44444;
+    curser: default;
+}
+
+
+.top_trash > ul > .dndPlaceholder {
+
+    display: none;
+}
+
+.array > ul > .dndPlaceholder {
+    background-color: #e182ff;
+    display: block;
+    width: 100%;
+}
+
+.object > ul > .dndPlaceholder {
+    background-color: #ffa0b3;
+    display: block;
+    width: 100%;
+    min-width: 1.5em;
+}
+
+.property > ul > .dndPlaceholder {
+    background-color: #ffa0b3;
+    display: inline-block;
+    width: 1.5em;
+}
+
+.function > ul > .dndPlaceholder {
+    background-color: #f7bb80;
+    display: block;
+    width: 100%;
+}
+
+.function > .row > ul > .dndPlaceholder {
+    background-color: #f7bb80;
+    display: inline-block;
+    width: 1.5em;
+}
+
+.evaluate > ul > .dndPlaceholder {
+    background-color: #c9ff8c;
+    display: inline-block;
+    width: 1.5em;
+}
+
+.return > ul > .dndPlaceholder {
+    background-color: #f7f071;
+    display: inline-block;
+    width: 1.5em;
+}
+
+.assign > ul > .dndPlaceholder {
+    background-color: #ffffff;
+    display: inline-block;
+    width: 1.5em;
+}
+
+.reference > ul > .dndPlaceholder {
+    background-color: #ffffff;
+    display: inline-block;
+    width: 1.5em;
+}
+
+
+
+ul.list_array {
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+}
+
+div.categories {
+    border-color: #ffffff;
+    background-color: none;
+    color : #ffffff;
+    cursor: pointer;
+}
+
+div.types {
+    border-color: #ffffff;
+    background-color: none;
+    color : #ffffff;
+    cursor: pointer;
+}

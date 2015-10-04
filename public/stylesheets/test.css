@@ -1,0 +1,92 @@
+
+body {
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.channel_column {
+    position: absolute;
+    left: 0;
+    top : 0em;
+}
+
+.channel {
+    position: relative;
+    width: 14em;
+    height: 4em;
+    background: url(../images/channel_bar.png);
+    background-size: 14em 4em;
+    background-repeat: no-repeat;
+    /*-webkit-box-shadow: inset 0 0 0.3em 0 rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0 0 0.3em 0 rgba(0,0,0,0.75);
+    box-shadow: inset 0 0 0.3em 0 rgba(0,0,0,0.75);*/
+}
+
+.control {
+    position: absolute;
+    top: 0;
+    left: 14em;
+    right: 0;
+    bottom: 0;
+    background-color: #c9c1ba;
+
+    -webkit-box-shadow: -0.3em 0 0.3em 0 rgba(0,0,0,0.75);
+    -moz-box-shadow: -0.3em 0 0.3em 0 rgba(0,0,0,0.75);
+    box-shadow: -0.3em 0 0.3em 0 rgba(0,0,0,0.75);
+
+    z-index: -1;
+}
+
+.ch_top {
+    position: absolute;
+    left: 0.5em;
+    top: 0.25em;
+}
+
+.ch_mid {
+    position: absolute;
+    left: 1em;
+    top: 1.2em;
+}
+
+.ch_name {
+    color: #424242;
+    font-size: 0.8em;
+    font-weight: bold;
+    font-family: Arial, "Lucida Console", Monaco, monospace;
+    /*text-shadow: 2px 2px #3c3526;*/
+}
+
+.ch_component {
+    color: #424242;
+    font-size: 0.8em;
+
+    font-family: Arial, "Lucida Console", Monaco, monospace;
+    /*text-shadow: 2px 2px #3c3526;*/
+}
+
+
+.ch_value {
+    color: #000000;
+    font-size: 2em;
+    font-family: Arial, "Lucida Console", Monaco, monospace;
+    text-shadow: 0.05em 0.0em #ffffff;
+    font-weight: bold;
+}
+
+.radial {
+    position: absolute;
+    left: 8em;
+    width: 4em;
+    height: 4em;
+}
+
+.menu {
+    position: relative;
+    left: 2em;
+    width: 14em;
+    height: 2em;
+}
