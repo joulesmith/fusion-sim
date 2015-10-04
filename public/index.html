@@ -1,0 +1,17 @@
+<html>
+<head>
+
+    <link href="./stylesheets/bootstrap.css" rel="stylesheet">
+    <link href="./stylesheets/test_code.css" rel="stylesheet">
+
+    <script data-main="javascripts/main" src="javascripts/lib/require.js"></script>
+</head>
+<body ng-controller="MainCtrl">
+
+    <div ng-controller="simulation"  class="inline box function">
+        <div class="block">Click plot to start/stop simulation:</div>
+        <canvas width="400" height="800" id="plot" ng-click="run ? stop() : start()" class="block"></canvas>
+    </div>
+
+</body>
+</html>
